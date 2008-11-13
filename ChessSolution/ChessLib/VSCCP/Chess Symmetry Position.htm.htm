@@ -1,0 +1,64 @@
+<HTML>
+	<HEAD>
+		<TITLE>Calculator</TITLE>
+		<Script>
+			function Sync(m, k)
+			{
+				switch(k)
+				{
+					case 0:
+						return m;
+						break;
+					case 1:
+						return m + 9 - 1 - 2 * (m % 9);
+						break;
+					case 2:
+						return m + (10 - 1 - 2 * parseInt(m / 9)) * 9;
+						break;
+					case 3:
+						return 90 - 1 - m;
+						break;
+				}	
+			}
+			function SyncOut(k)
+			{
+				var Title = "";
+				var Output = "";
+				switch(k)
+				{
+					case 0:
+						Title = "(normal move)";
+						break;
+					case 1:
+						Title = "(vertical axial symmetry)";
+						break;
+					case 2:
+						Title = "(horizontal axial symmetry)";
+						break;
+					case 3:
+						Title = "(central symmetry)";
+						break;
+				}
+				Output = "<Span>" + Title + "</Span>";
+				Output += "<TABLE border=1>";
+				for(var i=0;i<90;i++)
+				{
+					if(i%9==0){Output += "</TR>";}
+					Output += "<TD>"+Sync(i, k)+"</TD>";
+					if(i%9==8){Output += "</TR>";}
+				}
+				Output += "</TABLE>";
+
+				return Output;
+			}
+		</Script>
+	</HEAD>
+	<BODY>
+		<Script>
+			document.write(SyncOut(0));
+			document.write(SyncOut(1));
+			document.write(SyncOut(2));
+			document.write(SyncOut(3));
+		</Script>
+	</BODY>
+</HTML>

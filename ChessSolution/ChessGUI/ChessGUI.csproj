@@ -1,0 +1,236 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{5AF8B5E8-30B5-4630-B122-C46B697B18D0}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "ChessGUI"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "ChessGUI"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "ChessLib"
+                    Project = "{D8B0740E-E3B9-4EAB-A2E8-408364F58345}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FrmMain.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "FrmMain.resx"
+                    DependentUpon = "FrmMain.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "sys\BK1.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BK10.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BK11.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BK2.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BK3.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BK4.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BK5.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BK6.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BK7.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BK8.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BK9.BMP"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\BOOK.DAT"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "sys\CHESS01.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS02.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS03.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS04.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS05.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS06.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS07.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS08.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS09.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS10.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS11.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS12.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS13.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS14.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\CHESS15.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "sys\Thumbs.db"
+                    BuildAction = "None"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+
