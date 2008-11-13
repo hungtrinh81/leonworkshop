@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>JSON sample page 01</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			//Leon's Computers of JSON format
+			var ComputersOfLeon = {
+				"Computers":[
+					{"HostName":"FreeHome", "CPU":"1.0GHz", "RAM":"684MB"},
+					{"HostName":"XP1600", "CPU":"1.6GHz", "RAM":"512MB"},
+					{"HostName":"FreeCell", "CPU":"2.6GHz", "RAM":"1.5GB"},
+					{"HostName":"Leon-Chuang", "CPU":"1.8GHz", "RAM":"1.0GB"}
+				]
+			};
+			
+			function fillInTable(oTable, oComputers) {
+				//three columns
+				var headTitles = ['HostName', 'CPU', 'RAM'];
+				
+				//table header
+				var rowHeader = oTable.insertRow(oTable.rows.length);
+				for(var i=0;i<headTitles.length;i++) {
+					var cel = rowHeader.insertCell(rowHeader.cells.length);
+					cel.innerHTML = headTitles[i];
+					cel.align = 'center';
+					cel.style.fontWeight='bold';
+				}
+				
+				//table body
+				for(var i=0;i<oComputers.length;i++) {
+					var row = oTable.insertRow(oTable.rows.length);
+					
+					for(var j=0;j<headTitles.length;j++) {
+						var cel = row.insertCell(row.cells.length);
+						if(j%3==0) {cel.innerHTML = oComputers[i].HostName;}
+						else if(j%3==1) {cel.innerHTML = oComputers[i].CPU;}
+						else if(j%3==2) {cel.innerHTML = oComputers[i].RAM;}
+						else {}
+					}
+				}
+			}
+		/* ]]> */
+		</script>
+	</head>
+	<body>
+		<h3>JSON sample page 01 - [Computers of Leon]</h3>
+		<div>Objective : Create JSON Object and get Computers's Information from the JSON Object then fill in table</div>
+		<table id="InfoTable" border="1" width="300px"><tr style="background-color:lightblue;font-weight:bold;"><td colspan="3" align="center">Computers of Leon</td></tr></table>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			fillInTable(document.getElementById('InfoTable'), ComputersOfLeon.Computers);
+		/* ]]> */
+		</script>
+		<p>
+			<a href="http://validator.w3.org/check?uri=referer"><img
+				src="http://www.w3.org/Icons/valid-xhtml10-blue"
+				alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+		</p>
+	</body>
+</html>
