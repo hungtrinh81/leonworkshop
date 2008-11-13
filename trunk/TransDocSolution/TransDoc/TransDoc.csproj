@@ -1,0 +1,273 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{A6B47A19-5052-4356-BB00-40B344092C83}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "TransDoc"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "TransDoc"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "Interop.Word"
+                    AssemblyName = "Interop.Word"
+                    HintPath = "refs\Interop.Word.dll"
+                />
+                <Reference
+                    Name = "Interop.VBIDE"
+                    AssemblyName = "Interop.VBIDE"
+                    HintPath = "refs\Interop.VBIDE.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "common.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "content.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "default.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "default_hv.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DocConverter.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    SubType = "Component"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.cs"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "main_hv.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Testing.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Testing.aspx.cs"
+                    DependentUpon = "Testing.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Testing.aspx.resx"
+                    DependentUpon = "Testing.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "top.aspx"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "top.aspx.cs"
+                    DependentUpon = "top.aspx"
+                    SubType = "ASPXCodeBehind"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "top.aspx.resx"
+                    DependentUpon = "top.aspx.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "top.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "top_hv.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <Folder RelPath = "Document\" />
+                <File
+                    RelPath = "Menu\anylink\anylink.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\anylink\anylink.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\anylink\anylink.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\hvmenu\config.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\hvmenu\example.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\hvmenu\exmplmenu_var.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\hvmenu\install.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\hvmenu\install-frames.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\hvmenu\menu_com.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\hvmenu\tri.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\hvmenu\tridown.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\hvmenu\trileft.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\mleffect\css.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\mleffect\demo.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\mleffect\hack.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Menu\mleffect\js.js"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "refs\Interop.VBIDE.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "refs\Interop.Word.dll"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+
