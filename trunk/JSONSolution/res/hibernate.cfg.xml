@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+	<session-factory>
+		<property name="show_sql">true</property>
+		<property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+		<property name="dialect">NHibernate.Dialect.SQLiteDialect</property>
+		<property name="connection.driver_class">NHibernate.Driver.SQLiteDriver</property>
+		<property name="connection.connection_string">Data Source=C:\Projects\LCWORKSHOP\JSONSolution\res\sample.s3db;Version=3</property>
+		<property name="query.substitutions">true=1;false=0</property>
+	</session-factory>
+</hibernate-configuration>

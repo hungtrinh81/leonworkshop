@@ -1,0 +1,1 @@
+@sqlite3 -batch sample.s3db < InitDB.sql
