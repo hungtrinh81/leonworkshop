@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="JSONSample.Model" assembly="JSONSample.Model">
+	<class name="Computer" table="Computer">
+		<id name="UID" type="String">
+			<generator class="uuid.hex" />
+		</id>
+		<property name="Owner" />
+		<property name="HostName" />
+		<property name="CPU" />
+		<property name="RAM" />
+		<property name="Cost" />
+	</class>
+</hibernate-mapping>
