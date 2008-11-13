@@ -1,0 +1,438 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<title>Multi-level Effect Menu Demo</title>
+		<link rel="stylesheet" href="css.css">
+		<!--[if IE]>
+			<link rel="stylesheet" href="hack.css">
+		<![endif]-->
+		<script type="text/javascript" src="js.js">
+
+			/***********************************************
+			* Blm Multi-level Effect menu- By Brady Mulhollem at http://www.bradyontheweb.com/
+			* Script featured on DynamicDrive.com
+			* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and more
+			***********************************************/
+		</script>
+
+		<style type="text/css">
+		body{
+			padding-bottom: 200px;
+		}
+		</style>
+	</head>
+	<body>
+	<h2>Multi-level Effect Menu</h2>
+	<p>Mult-level effect menu is a javascript/css hybrid dropdown menu.It features many different options. It is capable of producing simple menus(both horizontal and vertical) or more advanced ones like the below. It should work in any standards compliant browser and IE.The "iframe shim" trick is included in this menu. If you don't know what that means just beleive me that it is a good thing.</p>
+	
+		<div class="mlmenu vertical blindv blackwhite arrow inaccesible">
+		
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</div>
+		<div class="mlmenu horizontal shake arrow bluewhite">
+		
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</div>
+		<p>As the above shows it is capable of producing multiple menus on a single page.In fact you can have an unlimited number of menus. All produced with the following markup.</p>
+		<textarea style="width: 100%; height: 200px;">
+		<div class="mlmenu [horizontal|vertical] [effect] [arrow] [color_class] [inaccesible]">
+		
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		</div>
+		</textarea>
+		<p>Then simply place this code in the head of the document.</p>
+		<textarea style="height: 100px;width: 100%;">
+		<link rel="stylesheet" href="css.css">
+		<!--[if IE]>
+			<link rel="stylesheet" href="hack.css">
+			<script type="text/javascript">
+			window.mlrunShim = true;
+			</script>
+		<![endif]-->
+		<script type="text/javascript" src="js.js">
+
+		/***********************************************
+		* Blm Multi-level Effect menu- By Brady Mulhollem at http://www.bradyontheweb.com/
+		* Script featured on DynamicDrive.com
+		* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and more
+		***********************************************/
+
+		</script>
+			</textarea>
+		<p>So lets go over the options</p>
+		<h2>Base</h2>
+		<p>The very minimum required to the menu is the following</p>
+		<textarea style="height:100px;width:100%;">
+		<div class="mlmenu [horizontal|vertical] [color]">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		</textarea>
+		<p>The first choice to make is horizontal or vertical. You simply place your choice right in the class portion. You also need to pick a color scheme. The default css icludes two blackwhite and bluewhite. Here's what we have so far.</p>
+			<div class="mlmenu vertical blackwhite">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+			<div class="mlmenu horizontal bluewhite">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<h2>Effects</h2>
+		<p>The menu is capable of producing five effects(only four in Internet Explorer). They are blink,shake,fade,blindv,blindh. To use them you simple inlcude them in the class name.</p>
+		<h3>Blink</h3>
+			<div class="mlmenu horizontal bluewhite blink">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<h3>Shake</h3>
+		<div class="mlmenu horizontal bluewhite shake">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	<h3>Fade</h3>
+	<p><span style="color: red">Now works in Internet Explorer</span></p>
+			<div class="mlmenu horizontal bluewhite fade">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	<h3>Blindh</h3>
+			<div class="mlmenu horizontal bluewhite blindh">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	<h3>Blindv</h3>
+			<div class="mlmenu horizontal bluewhite blindv">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	<h2>Other Switches</h2>
+	<p>The menu also supports two other "switches" unlike effects they may be both used at once</p>
+	<h3>arrow</h3>
+	<p>This switch will add a small arrows to any menu that has a submenu. The javascript always adds a class of "haschild" to an li element that would have an arrow.There is a small Internet Explorer bug with this switch that will cause the menu to have a slighly larger height that other browsers. In most cases this can be ignored.</p>
+			<div class="mlmenu horizontal bluewhite blindv arrow">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<h3>plus</h3>
+		<p>Similiar to the above this switch will add a + sign. It <em>can</em> be used with arrow but I don't see why you would want to!</p>
+		<div class="mlmenu horizontal bluewhite blindv plus">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<h3>delay</h3>
+		<p>This switch will cause a small delay before the menu disappears. This helps make the menu feel a little more solid.</p>
+		<div class="mlmenu horizontal bluewhite blindv plus inaccessible delay">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<h3>inaccesible</h3>
+		<p>This switch will prevent the "flickering" when the page loads. This comes at a price though. Users with javascript disabled will not see the sub-menus. To negate this make top-level links point to a sitemap to prevent confusion</p>
+			<div class="mlmenu horizontal bluewhite blindv arrow inaccessible">
+			<ul>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a>
+					<ul>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+						<li><a href="#">Link</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<h2>Browser Supports and downloads</h2>
+		<p>The menu has been tested in IE6(IE5.5 partial,there is slight issues with alignment and borders),Firefox 1.5+ and Opera 8.5+. The latest Safari release was tested on an older version of the script and was found to work.. All required files plus this page may be <a href="http://www.bradyontheweb.com/demo/ml_nav_demo/mleffect.zip">downloaded here</a></p>
+		<p>This menu is created by Brady Mulhollem. If you have any questions or comments you can email me at blm126 [AT] gmail.remove.this.com.</p>
+	</body>
+</html>
