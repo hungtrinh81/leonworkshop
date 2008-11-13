@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>JSON sample page 02</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<script type="text/javascript" src="../js/json2005.js"></script>
+		<script type="text/javascript" src="../Provider.ashx?proxy"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			var ComputersOfSomeOne;
+		
+			function GetComputersByOwner(s) {
+				var tbl = document.getElementById('InfoTable');
+				resetTable(tbl);
+				
+				if(s=="Choose Computer's Owner") {
+					return false;
+				}
+			
+				var p = new Provider();
+				ComputersOfSomeOne = p.getComputer(s);
+				
+				if(ComputersOfSomeOne.length==0) {
+					alert(s + ' have no Computers!!');
+					return false;
+				}
+				
+				fillInTable(tbl, ComputersOfSomeOne);
+			}
+			
+			function resetTable(oTable) {
+				//clear all tableRow
+				for(var i=oTable.rows.length-1;i>=1;i--) {
+					var TheRow = oTable.rows[i];
+					TheRow.parentNode.removeChild(TheRow);
+				}
+			}
+			
+			function fillInTable(oTable, oComputers) {
+				//five columns
+				var headTitles = ['Owner', 'HostName', 'CPU', 'RAM', 'Cost'];
+			
+				//table header
+				var rowHeader = oTable.insertRow(oTable.rows.length);
+				for(var i=0;i<headTitles.length;i++) {
+					var cel = rowHeader.insertCell(rowHeader.cells.length);
+					cel.innerHTML = headTitles[i];
+					cel.align = 'center';
+					cel.style.fontWeight='bold';
+				}
+				
+				//table body
+				for(var i=0;i<oComputers.length;i++) {
+					var row = oTable.insertRow(oTable.rows.length);
+					
+					for(var j=0;j<headTitles.length;j++) {
+						var cel = row.insertCell(row.cells.length);
+						if(j%5==0) {cel.innerHTML = oComputers[i].owner;}
+						else if(j%5==1) {cel.innerHTML = oComputers[i].hostName;}
+						else if(j%5==2) {cel.innerHTML = oComputers[i].cPU;}
+						else if(j%5==3) {cel.innerHTML = oComputers[i].rAM;}
+						else if(j%5==4) {cel.innerHTML = oComputers[i].cost;}
+						else {}
+					}
+				}
+			}
+			
+			function preview(spanID, imgID)
+			{
+				var oSpan = document.getElementById(spanID);
+				var oImage = document.getElementById(imgID);
+				if (oImage.style.display=='none') {
+					oImage.style.display='';
+					oSpan.innerText='hidden preview';
+				}
+				else {
+					oImage.style.display='none';
+					oSpan.innerText='show preview';
+				}
+			}
+		/* ]]> */
+		</script>
+	</head>
+	<body>
+		<h3>JSON sample page 02 - [Computers of who?]</h3>
+		<div>Objective : get Computers's Information by JayRock Provider.ashx using a Owner Parameter and then fill in table</div>
+		<div><span id="span_ctl" onclick="preview('span_ctl', 'img_data');" style="color:blue;font-weight:bold;cursor:pointer;">show preview</span><br /><img style="display:none;" id="img_data" src="../computers.png" alt="data preview picture" /></div>
+		<select id="ddl" onchange="GetComputersByOwner(this.options[this.selectedIndex].innerHTML);" style="font-weight:bold;">
+			<option style="color:lightgrey;">Choose Computer's Owner</option>
+			<option>Leon</option>
+			<option>Matt</option>
+			<option>Allen</option>
+			<option>Bill Gates</option>
+		</select>
+		<table id="InfoTable" border="1" width="300px"><tr style="background-color:lightblue;font-weight:bold;"><td colspan="5" align="center">Computers of who?</td></tr></table>
+		<p>
+			<a href="http://validator.w3.org/check?uri=referer"><img
+				src="http://www.w3.org/Icons/valid-xhtml10-blue"
+				alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+		</p>
+	</body>
+</html>
