@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessLib", "ChessLib\ChessLib.csproj", "{D8B0740E-E3B9-4EAB-A2E8-408364F58345}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChessGUI", "ChessGUI\ChessGUI.csproj", "{5AF8B5E8-30B5-4630-B122-C46B697B18D0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D8B0740E-E3B9-4EAB-A2E8-408364F58345}.Debug.ActiveCfg = Debug|.NET
+		{D8B0740E-E3B9-4EAB-A2E8-408364F58345}.Debug.Build.0 = Debug|.NET
+		{D8B0740E-E3B9-4EAB-A2E8-408364F58345}.Release.ActiveCfg = Release|.NET
+		{D8B0740E-E3B9-4EAB-A2E8-408364F58345}.Release.Build.0 = Release|.NET
+		{5AF8B5E8-30B5-4630-B122-C46B697B18D0}.Debug.ActiveCfg = Debug|.NET
+		{5AF8B5E8-30B5-4630-B122-C46B697B18D0}.Debug.Build.0 = Debug|.NET
+		{5AF8B5E8-30B5-4630-B122-C46B697B18D0}.Release.ActiveCfg = Release|.NET
+		{5AF8B5E8-30B5-4630-B122-C46B697B18D0}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
