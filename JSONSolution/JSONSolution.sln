@@ -1,0 +1,67 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONDAL", "JSONDAL\JSONDAL.csproj", "{7C873DA8-1B6A-4C1D-A278-A5ACBCF9FD1A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnit_JSONLibrary", "NUnit_JSONLibrary\NUnit_JSONLibrary.csproj", "{C76ABBBD-3DA3-40D0-B093-6D462D60DD09}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONModel", "JSONModel\JSONModel.csproj", "{6B13B2E2-56FF-47EA-9B52-BBE9A57A76D8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONWeb", "http://localhost/JSONWeb/JSONWeb.csproj", "{67E256D1-17B9-4D57-B694-802CB41A5045}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{7C873DA8-1B6A-4C1D-A278-A5ACBCF9FD1A}.Debug.ActiveCfg = Debug|.NET
+		{7C873DA8-1B6A-4C1D-A278-A5ACBCF9FD1A}.Debug.Build.0 = Debug|.NET
+		{7C873DA8-1B6A-4C1D-A278-A5ACBCF9FD1A}.Release.ActiveCfg = Release|.NET
+		{7C873DA8-1B6A-4C1D-A278-A5ACBCF9FD1A}.Release.Build.0 = Release|.NET
+		{C76ABBBD-3DA3-40D0-B093-6D462D60DD09}.Debug.ActiveCfg = Debug|.NET
+		{C76ABBBD-3DA3-40D0-B093-6D462D60DD09}.Debug.Build.0 = Debug|.NET
+		{C76ABBBD-3DA3-40D0-B093-6D462D60DD09}.Release.ActiveCfg = Release|.NET
+		{C76ABBBD-3DA3-40D0-B093-6D462D60DD09}.Release.Build.0 = Release|.NET
+		{6B13B2E2-56FF-47EA-9B52-BBE9A57A76D8}.Debug.ActiveCfg = Debug|.NET
+		{6B13B2E2-56FF-47EA-9B52-BBE9A57A76D8}.Debug.Build.0 = Debug|.NET
+		{6B13B2E2-56FF-47EA-9B52-BBE9A57A76D8}.Release.ActiveCfg = Release|.NET
+		{6B13B2E2-56FF-47EA-9B52-BBE9A57A76D8}.Release.Build.0 = Release|.NET
+		{67E256D1-17B9-4D57-B694-802CB41A5045}.Debug.ActiveCfg = Debug|.NET
+		{67E256D1-17B9-4D57-B694-802CB41A5045}.Debug.Build.0 = Debug|.NET
+		{67E256D1-17B9-4D57-B694-802CB41A5045}.Release.ActiveCfg = Release|.NET
+		{67E256D1-17B9-4D57-B694-802CB41A5045}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		res\antlr.runtime.dll = res\antlr.runtime.dll
+		res\Castle.DynamicProxy.dll = res\Castle.DynamicProxy.dll
+		res\DotNetMock.dll = res\DotNetMock.dll
+		res\DotNetMock.Framework.dll = res\DotNetMock.Framework.dll
+		res\hibernate.cfg.xml = res\hibernate.cfg.xml
+		res\Iesi.Collections.dll = res\Iesi.Collections.dll
+		res\InitDB.bat = res\InitDB.bat
+		res\InitDB.sql = res\InitDB.sql
+		res\Jayrock.dll = res\Jayrock.dll
+		res\Jayrock.Json.dll = res\Jayrock.Json.dll
+		res\log4net.dll = res\log4net.dll
+		res\NHibernate.dll = res\NHibernate.dll
+		res\nunit.framework.dll = res\nunit.framework.dll
+		res\Rhino.Mocks.dll = res\Rhino.Mocks.dll
+		res\SQLite.dll = res\SQLite.dll
+		res\SQLite.NET.dll = res\SQLite.NET.dll
+		res\SQLite3.dll = res\SQLite3.dll
+		res\sqlite3.exe = res\sqlite3.exe
+		res\vdir_rebuild.bat = res\vdir_rebuild.bat
+		res\vdir_rebuild_caller.bat = res\vdir_rebuild_caller.bat
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
